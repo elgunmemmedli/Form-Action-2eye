@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&display=swap');
 body{
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#general {
     display: flex;
     margin: 0;
-    background-color: #4089a0 !important;
-  
 }
 form{
     margin: auto;
@@ -13,18 +16,18 @@ h1{
     font-family: 'Anton', sans-serif;
     text-align: center;
     padding-top: 10vh;
-    color: #FFF;
+    color: #FFF ;
 }
 label{
     font-family:  'Josefin Sans';
-    color: #FFF;
+    color: #000 ;
     margin-top: 10px !important;
 }
 #emailHelp{
     font-family: 'Josefin Sans';
     margin-top: 30px;
     margin-bottom: 20px;
-    color: rgb(221, 212, 212) !important;
+    color: #000 !important;
     text-align: center;
 }
 
@@ -32,6 +35,7 @@ input{
     width: 450px !important;
     outline: none !important;
     border: none !important;
+    background-color: #e3979b !important;
 }
 input:hover{
     border-radius: 20px;
@@ -41,13 +45,19 @@ input:hover{
     margin: auto !important;
     margin-top: 50px !important;
     padding: 10px 90px !important;
+    margin-bottom: 105px !important;
+    background-color: #e3979b !important;
+    outline: none !important;
+    border: none !important;
 }
 .btn:hover{
     border-radius: 20px;
 }
 
+
+
 #show{
-    color: rgb(221, 212, 212);
+    color: #000;
     font: 300 16px 'Josefin Sans';
 }
 
@@ -55,7 +65,7 @@ i{
     position: relative;
     left: 94%;
     top: -40px;
-    color: #999;
+    color: #000;
 }
 .form-group{
     margin: 0 !important;

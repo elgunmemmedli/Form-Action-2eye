@@ -30,22 +30,21 @@ onkeyup = function Show() {
 
 
 
-document.getElementById("slash").style.display="none";
+
 function Active(){
-    let take = document.getElementById("display");
-    if(take.type ==="password" ){
-        take.type = "text";
-    } else{ take.type = "password"};
-   document.getElementById("eye").style.display="none";
-   document.getElementById("slash").style.display="inline";
+    let x = document.getElementById("display").type;
+
+    if (x == "password") {
+        document.getElementById("display").type = 'text'
+    } else {
+        document.getElementById("display").type = 'password'
+    }
+
+    let z = document.getElementById("eye").className;
+    if(z=="fas fa-eye-slash"){
+        document.getElementById("eye").className="fas fa-eye"
+    }else{
+        document.getElementById("eye").className="fas fa-eye-slash"
+    }
 }
 
-function Hide(){
-    let take1 = document.getElementById("display");
-    if(take1.type === "text"){
-        take1.type = "password";
-    }else{take.type = "text"};
-    document.getElementById("slash").style.display="none";
-    document.getElementById("eye").style.display="inline";
-    
-}
